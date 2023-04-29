@@ -22,24 +22,35 @@
 # ноутбук
 # Вывод:
 # 12
-dic = {'A':1,'E':1,'I':1,'O':1,'U':1,'L':1,'N':1,'S':1,'T':1,'R':1,
-       'D':2,'G':2,
-       'B':3,'C':3,'M':3,'P':3,
-       'F':4, 'H':4,'V':4,'W':4,'Y':4,
-       'K':5,
-       'J':8,'X':8,
-       'Q':10,'Z':10}
+
+
+# dic = {'A':1,'E':1,'I':1,'O':1,'U':1,'L':1,'N':1,'S':1,'T':1,'R':1,
+#        'D':2,'G':2,
+#        'B':3,'C':3,'M':3,'P':3,
+#        'F':4, 'H':4,'V':4,'W':4,'Y':4,
+#        'K':5,
+#        'J':8,'X':8,
+#        'Q':10,'Z':10}
 
 
 word_up_arr = list((input("Введите слово :")).upper())  
 
-#print(word_up_arr)
+print(word_up_arr)
 
-price = 0
+# price = 0
 
-for i in range(len(word_up_arr)):
-    price = price + dic.get(word_up_arr[i])
+# for i in range(len(word_up_arr)):
+#     price = price + dic.get(word_up_arr[i])
     
             
-print(price)            
+# print(price)            
 
+dic = {"AEIOULNSTRАВЕИНОРСТ":1,
+       "DGДКЛМПУ":2,
+       "BCMPБГЁЬЯ":3,
+       "FHVWYЙЫ":4,
+       "KЖЗХЦЧ":5,
+       "JXШЭЮ":8,
+       "QZФЩЪ":10}
+
+print(sum([i[1] for i in dic.items() for j in word_up_arr if j in i[0]]))

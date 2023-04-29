@@ -5,7 +5,7 @@
 # Output: 6
 
 numbers = []
-for i in range(int(input())):
-    numbers.append(input())
+for i in range(int(input("Количество элементов массива :"))):
+    numbers.append(input("Введите элемент :"))
     
 print(len(set(numbers)))
