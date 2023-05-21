@@ -19,3 +19,8 @@ print(list)
 print(list_int_clean)
 
 print([i for i in range(len(list_int_clean)) if (a <= list_int_clean[i] <= b) ])
+
+
+# второй вариант
+
+print([ind for ind, val in enumerate(list_int_clean) if a <= val <= b])

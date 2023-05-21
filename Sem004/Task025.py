@@ -12,6 +12,10 @@
 
 string = "a a a b c a a d c d d".split()
 
+print(string)
+
+print(type(string))
+
 dict = {}.fromkeys(string, 0)
 
 print(dict)
