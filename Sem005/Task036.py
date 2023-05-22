@@ -11,3 +11,14 @@
 #                                             4 8 12 16 20 24
 #                                             5 10 15 20 25 30
 #                                             6 12 18 24 30 36
+a = int(input("Введите число строк :"))
+b = int(input("Введите число столбцов :"))
+
+def print_operation_table(op, a, b):
+    for i in range(1, a + 1):
+        for j in range(1, b + 1):
+            print("{:2d}".format(op(i, j)), end ="\t")
+        print("\n")
+            
+    
+print_operation_table(lambda i, j: i * j, a, b)

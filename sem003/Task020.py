@@ -53,4 +53,5 @@ dic = {"AEIOULNSTRАВЕИНОРСТ":1,
        "JXШЭЮ":8,
        "QZФЩЪ":10}
 
-print(sum([i[1] for i in dic.items() for j in word_up_arr if j in i[0]]))
+print(sum([i[1] for i in dic.items()
+           for j in word_up_arr if j in i[0]]))

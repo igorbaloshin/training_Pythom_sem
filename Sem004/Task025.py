@@ -23,3 +23,4 @@ print(dict)
 for i in string:
     print(f"{i}_{dict[i]}" if dict[i] else i, end=" ")
     dict[i] += 1
+    
