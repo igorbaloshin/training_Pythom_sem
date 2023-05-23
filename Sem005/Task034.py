@@ -52,7 +52,7 @@ for i in range(len(phrase_arr_clean_split)):
 
 
 for i in range(len(phrase_arr_count)-1):
-    if phrase_arr_count[i] != phrase_arr_count[i + 1]:
+    if phrase_arr_count[i] != phrase_arr_count[i + 1] or phrase_arr_count[i] == 0 :
         flag = 0
         
       
